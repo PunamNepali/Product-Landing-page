@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#nav-bar li {
+  margin-right: 20px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#nav-bar a:hover {
+  color: #2a9d8f; /* Accent color */
+}
+
+/* Section Styles */
+section {
+  padding: 80px 20px 20px; /* Padding to avoid overlap with fixed header */
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  color: #2a9d8f; /* Accent color */
+  margin-bottom: 20px;
+}
+
+/* Features Section */
+#Features ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+#Features li {
+  margin-bottom: 10px;
+}
+
+/* How It Works Section */
+#How-It-works ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+#How-It-works li {
+  margin-bottom: 10px;
+}
+
+/* Pricing Section */
+#Pricing table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#Pricing th, #Pricing td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#Pricing th {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+#Pricing tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#Pricing tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer li {
+  display: inline;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  #video {
+      width: 90%;
+      height: auto;
+  }
+
+  form input {
+      width: 90%;
+  }
+
+  section {
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+}
